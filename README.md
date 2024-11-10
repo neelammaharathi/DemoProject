@@ -30,6 +30,7 @@ Neelam Maharathi Project/
 How to Run the Project
 
 1. Clone or Download this repository.
+(Github Link : https://github.com/neelammaharathi/DemoProject)
 2. Open the index.html file in any modern web browser (e.g., Chrome, Firefox).
 3. The website will load with all assets and styles.
 
