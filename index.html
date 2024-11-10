@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Treatments</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+        .freestyle-font {
+            font-family: 'Fredericka the Great', cursive;
+			color: blue;
+        }
+		.footer1 {
+			text-align: center;
+		}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar with logo -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo -->
+			<div>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" width="150" height="50" class="d-inline-block align-text-top">
+				
+            </a>
+			<p>Healing Globally ....</p>
+			</div>
+			
+			<div class="container my-2">
+        <!-- Icon with left-side content -->
+        <div class="row align-items-center">
+            <!-- Icon or image (left side) -->
+            <div class="col-md-1 text-center">
+                <img src="images/reception.png" alt="Icon" width="50" height="50">
+            </div>
+
+            <!-- Text content (right side) -->
+            <div class="col-md-3">
+                <p>
+                    Second Medical Opinion.<br/>
+                    <b>Book Consultation</b>
+                </p>
+            </div>
+			<div class="col-md-1 text-center">
+                <img src="images/call.png" alt="Icon" width="50" height="50">
+            </div>
+			<div class="col-md-3">
+                <p>
+                    Call Us On.<br/>
+                    <b>93267 22222</b>
+                </p>
+            </div>
+			<div class="col-md-1 text-center">
+                <img src="images/email.png" alt="Icon" width="50" height="50">
+            </div>
+			<div class="col-md-3">
+                <p>
+                    Email Us On.<br/>
+                    <b>aafiya9@gmail.com</b>
+                </p>
+            </div>
+        </div>
+    </div>	
+        </div>
+    </nav>
+	<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><span class="text-white">Home</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><span class="text-white">About Us</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="text-white">Treatments</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>-->
+		<div class="dropdown">
+        <button class="btn btn-info dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Treatments
+        </button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<li><a class="dropdown-item" href="#">Knee Surgeon</a></li>
+				<li><a class="dropdown-item" href="#">ENT Surgeon</a></li>
+				<li><a class="dropdown-item" href="#">Urologist</a></li>
+				<li><a class="dropdown-item" href="#">Spine Surgeon</a></li>
+				<li><a class="dropdown-item" href="#">Orthopedic</a></li>
+				<li><a class="dropdown-item" href="#">Cardiologist</a></li>
+			</ul>
+		</div>
+      </li>
+	  <li class="nav-item dropdown">
+        <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="text-white">Destinations</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>-->
+		<div class="dropdown">
+        <button class="btn btn-info dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Destinations
+        </button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<li><a class="dropdown-item" href="#">Mumbai</a></li>
+				<li><a class="dropdown-item" href="#">Delhi</a></li>
+				<li><a class="dropdown-item" href="#">Gurgoan</a></li>
+				<li><a class="dropdown-item" href="#">Orissa</a></li>
+			</ul>
+		</div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><span class="text-white">Hospitals</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#"><span class="text-white">FAQs</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#"><span class="text-white">Blogs</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#"><span class="text-white">Requests & Quotes</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-4 my-lg-0 ms-auto">
+      <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+    <div class="row">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <button class="btn btn-primary" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+</div>
+	  
+    </form>
+  </div>
+</nav>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	
+<!-- Baneer slider started -->
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/Dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/banner2.jpg" class="d-block w-100" alt="Banner 1">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Total Knee replacement is a surgery to remove and replace the whole <br/> damaged knee joint with the artifical joint</p>
+		<button type="button" class="btn btn-info">Enquiry Now</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/banner3.jpg" class="d-block w-100" alt="Banner 2">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Total Knee replacement is a surgery to remove and replace the whole <br/> damaged knee joint with the artifical joint</p>
+		<button type="button" class="btn btn-info">Enquiry Now</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/banner4.jpg" class="d-block w-100" alt="Banner 3">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Total Knee replacement is a surgery to remove and replace the whole <br/> damaged knee joint with the artifical joint</p>
+		<button type="button" class="btn btn-info">Enquiry Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Previous/Next Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Baneer slider ended -->
+
+<!-- Second navbar started -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#OverviewSection">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#EligibiltySection">Eligibilty</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#PreparationsSection">Preparations</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#TreatmentSection">About Treatment</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+</nav>
+
+<!-- Content Sections -->
+<div id="OverviewSection" style="height: 70vh">
+<br/>
+  <div class="container my-2">
+	<div class="row align-items-center">
+            <!-- Icon or image (left side) -->
+            
+            <!-- Text content (right side) -->
+            <div class="col-md-5">
+				<h5>Treatment Overview</h5><br/>
+                <p>
+				The treatment of aims to alleviate symptoms, manage the condition, and improve the patient's overall quality of life. 
+				<br>
+				Depending on the type, stage, and severity of the condition, treatment may vary from person to person.
+				<br>
+				<b>Treatment Goals</b>
+				The main objectives of the treatment are:
+				<br>
+				<b>Symptom relief:</b> To reduce pain, discomfort, or other associated symptoms.<br>
+				<b>Disease management:</b> To control or slow the progression of the condition.<br>
+				<b>Restoration of function:</b> To improve or maintain physical or mental functioning.<br>
+				<b>Prevention of complications: </b>To reduce the risk of further health issues.<br>
+				<b>Treatment Options</b><br>
+				These help in [specific purpose, e.g., pain management, reducing inflammation].
+				
+                </p>
+           </div>
+		   <div class="col-md-1">
+                <img src="images/doctorchecks.jpg" class="img-rounded" alt="Icon" width="500px" height="350px">
+            </div>
+  </div>
+</div>
+</div>
+<br>
+<hr>
+
+<div id="EligibiltySection" style="height: 70vh">
+	<div class="container my-2">
+	<div class="row align-items-center">
+            <!-- Icon or image (left side) -->
+            
+            <!-- Text content (right side) -->
+            <div class="col-md-6">
+				<h5>Eligibilty for Treatment</h5><br/>
+                <p>
+					Eligibility for treatment depends on various factors, including the type of treatment being considered, the severity of the condition, and the patient's overall health. 
+				<br>
+				 Not all treatments are suitable for everyone, and it is important for both patients and healthcare providers to carefully consider eligibility criteria before moving forward with any course of action.
+				<br>
+				The following factors may be considered when determining eligibility for treatment:<br>
+				Age: Some treatments may be more suitable for certain age groups, either for safety reasons or because they are more effective for younger or older patients.<br>
+				Overall Health: The patient’s general health status, including the presence of other medical conditions (e.g., heart disease, diabetes, etc.), can affect their ability to safely undergo treatment.<br/>
+                </p>
+           </div>
+		   <div class="col-md-4">
+				<div class="d-flex justify-content-center align-items-center container">
+					<div class="card py-5 px-3">
+					<h5 class="freestyle-font text-decoration-underline">Need Help ?</h5><span class="mobile-text">Just let us know. We will be happy to <b class="text-danger">assist you.</b></span>
+					<br/>
+					<div class="form-group">
+						<input type="text" class="form-control" id="FullNameControlInput1" placeholder="Full Name">
+					</div><br/>
+					<div class="form-group">
+						<input type="email" class="form-control" id="EmailControlInput1" placeholder="Email Address">
+					</div><br/>
+					<div class="form-group">
+						<input type="text" class="form-control" id="PhoneNumberControlInput1" placeholder="Phone Number">
+					</div><br/>
+					<div class="form-group">
+						<textarea class="form-control" id="DescriptionFormControlTextarea1" rows="3" placeholder="Describe your Treatment Requirement"></textarea>
+					</div>
+			</div>
+		</div>
+     </div>
+  </div>
+</div>
+</div>
+<br/>
+<hr>
+
+<div id="PreparationsSection" style="height: 70vh">
+  <br/>
+  <div class="container my-2">
+	<div class="row align-items-center">
+            <!-- Icon or image (left side) -->
+            
+            <!-- Text content (right side) -->
+            <div class="col-md-6">
+				<h5>Preparation Before Treatment</h5>
+                <p>
+				Preparation Before Treatment content typically outlines the steps and guidelines a patient must follow before undergoing a medical procedure or treatment. 
+				<br>
+				This ensures that the patient is well-prepared and the treatment can proceed safely and effectively. 
+				<br>
+				1. Introduction<br>
+				Proper preparation before treatment is crucial for ensuring the best possible outcome. This section outlines the steps you need to take before beginning treatment for [Condition/Procedure Name]. Following these guidelines will help minimize risks and make the treatment process smoother.
+				<br/>
+				2. Medical Assessment<br/>
+				Before starting the treatment, you will need to undergo a thorough medical evaluation. This may include:
+				<br/>
+				 Physical Examination: A healthcare provider will assess your overall health and the specific condition that is being treated.
+				
+                </p>
+           </div>
+  </div>
+</div>
+</div>
+<br/>
+<hr>
+
+<div id="TreatmentSection" style="height: 70vh">
+<br/>
+  <div class="container my-2">
+	<div class="row align-items-center">
+            <!-- Icon or image (left side) -->
+            
+            <!-- Text content (right side) -->
+            <div class="col-md-6">
+				<h5>About Treatment</h5><br/>
+                <p>
+				The treatment for is designed to address specific medical conditions or improve overall health.
+				<br>
+				This treatment may involve various approaches, including medication, surgery, therapy, or a combination of methods. The goal is to relieve symptoms, manage the condition effectively, and enhance the quality of life for the patient.
+				<br>
+				Purpose of the Treatment
+				The main objectives of the treatment are:
+				<br>
+				The treatment aims to:<br>
+				Alleviate Symptoms: Reducing discomfort, pain, or other symptoms related to the condition.<br>
+				Manage the Condition: Slowing disease progression or keeping symptoms under control.<br>
+                </p>
+           </div>
+  </div>
+</div>
+</div>
+<hr>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Smooth Scroll Effect -->
+<script>
+  // Optional: Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+<!-- Second navbar ended -->
+
+<!-- photos slider started -->
+	<div id="multiPhotoCarousel" class="carousel slide" data-bs-ride="carousel">
+	<h5 align="center">Top Orthopedic <span style="color:blue"> Doctors</span></5><br/><br/>
+    <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/doctor1.jpg" class="d-block w-100" alt="Photo 1">
+					<p>Dr. Ayush Sinha</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/doctor2.jpg" class="d-block w-100" alt="Photo 2">
+					<p>Dr. Abhay Sharma</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/doctor3.jpg" class="d-block w-100" alt="Photo 3">
+					<p>Dr. Mahesh Verma</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second Slide -->
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/doctor4.jpg" class="d-block w-100" alt="Photo 4">
+					<p>Dr. Rajesh Verma</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/doctor5.jpg" class="d-block w-100" alt="Photo 2">
+					<p>Dr. Om Nayak</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/doctor6.jpg" class="d-block w-100" alt="Photo 6">
+					<p>Dr. Ranjan Yadav</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Third Slide -->
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#multiPhotoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#multiPhotoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br>
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+	<div class="mx-auto text-white">
+		<p><b>Stay healthy and strong to enjoy life</b></p>
+		<p><b>We have a team of healthcare experts</b></p>
+		<span><button type="button" class="btn btn-primary">Get In Touch</button>&nbsp;&nbsp;|&nbsp;&nbsp;93267 22222</span>
+	</div>
+</nav>
+<!-- photos slider ended -->
+<!-- main footer started -->
+<footer class="bg-dark text-white text-center text-lg-start">
+    <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa fa-google"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa fa-linkedin"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        <section class="">
+            <div class="row">
+                <!-- First Column -->
+
+                <!-- Second Column -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5>Important Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">FAQs</a></li>
+                        <li><a href="#" class="text-white">Blog</a></li>
+						<li><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+				
+				<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5>Top Hospitals</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-white">Apollo Hospital Delhi</a></li>
+                        <li><a href="#" class="text-white">Medanta Hospital Gurgoan</a></li>
+                        <li><a href="#" class="text-white">Max Hospital Delhi</a></li>
+                        <li><a href="#" class="text-white">Jaslok Hospital Mumbai</a></li>
+						<li><a href="#" class="text-white">Fortis Hospital Mumbai</a></li>
+                    </ul>
+                </div>
+
+                <!-- Third Column -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Speciality Treatment</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a class="text-white">Knee Replacement Surgeon</a></li>
+                        <li><a class="text-white">Unologist</a></li>
+                        <li><a class="text-white">Spine Surgeon</a></li>
+						<li><a class="text-white">ENT Surgeon</a></li>
+						<li><a class="text-white">Orthopedic</a></li>
+						<li><a class="text-white">Cradiologist</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Links -->
+    </div>
+	<hr>
+    <!-- Copyright -->
+    <div class="container my-2">
+        <!-- Icon with left-side content -->
+        <div class="row align-items-center">
+            <!-- Icon or image (left side) -->
+            <div class="col-md-1 text-center">
+                <img src="images/logo.png" alt="Icon" width="80px" height="80px">
+            </div>
+
+            <!-- Text content (right side) -->
+            <div class="col-md-8">
+                <p>
+                    Aafiya Medical is a premier healthcare management organization dedicated to providing quality health services and personalized care. <br/>
+					With a mission to ensure accessible and affordable healthcare for all, Aafiya Medical collaborates with a wide network of medical providers to deliver comprehensive health management solutions.
+                </p>
+            </div>
+		</div>
+</footer>
+<!-- main footer ended -->
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+	<div class="text-white mx-auto">
+		<p>Copyright @ 2020 Aafifya Treatments. All rights reserved. Designed by Ideamagix.</p>
+	</div>
+</nav>
+</body>
+</html>
